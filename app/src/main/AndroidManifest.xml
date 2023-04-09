@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Compaynion"
+        tools:targetApi="31">
+        <activity
+            android:name=".canteen_manage"
+            android:exported="false" />
+        <activity
+            android:name=".student_manage"
+            android:exported="false" />
+        <activity
+            android:name=".library_return"
+            android:exported="false" />
+        <activity
+            android:name=".library_issue"
+            android:exported="false" />
+        <activity
+            android:name=".library_checkout"
+            android:exported="false" />
+        <activity
+            android:name=".library_checkin"
+            android:exported="false" />
+        <activity
+            android:name=".library_fines"
+            android:exported="false" />
+        <activity
+            android:name=".admin_canteen_billing_month"
+            android:exported="false" />
+        <activity
+            android:name=".admin_canteen_billing_date"
+            android:exported="false" />
+        <activity
+            android:name=".admin_library"
+            android:exported="false" />
+        <activity
+            android:name=".admin_canteen"
+            android:exported="false" />
+        <activity
+            android:name=".admin_canteen_billing"
+            android:exported="false" />
+        <activity
+            android:name=".admin_student_wallet"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_student"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_manage_student_canteen"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_recharge"
+            android:exported="false" />
+        <activity
+            android:name=".Scanner"
+            android:exported="false">
+            <meta-data
+                android:name="com.google.android.gms.vision.DEPENDENCIES"
+                android:value="barcode" />
+        </activity>
+        <activity
+            android:name=".AdminActivateDeactivate"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminDues"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminHomepage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CanteenTransaction"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CanteenHomepage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CanteenLogin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LibraryTransaction"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LibraryHomepage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LibraryLogin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StudentCanteen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StudentLibrary"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StudentRechargeHistory"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StudentWallet"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StudentTransactionHistory"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StudentHomepage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StudentLogin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
