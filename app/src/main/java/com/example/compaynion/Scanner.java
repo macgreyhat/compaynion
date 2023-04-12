@@ -1,9 +1,7 @@
 package com.example.compaynion;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.AudioManager;
 import android.media.ToneGenerator;
@@ -11,14 +9,19 @@ import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
-import java.io.IOException;
 
+import java.io.IOException;
 
 
 public class Scanner extends AppCompatActivity {
@@ -31,6 +34,8 @@ public class Scanner extends AppCompatActivity {
     private ToneGenerator toneGen1;
     private TextView barcodeText;
     private String barcodeData;
+    private Button bill;
+    private Button add;
 
 
     @Override
@@ -41,6 +46,18 @@ public class Scanner extends AppCompatActivity {
         surfaceView = findViewById(R.id.surface_view);
         barcodeText = findViewById(R.id.barcode_text);
         initialiseDetectorsAndSources();
+
+        bill=(Button) findViewById(R.id.billButton);
+
+        bill.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i1 = new Intent(Scanner.this,CanteenBill.class);
+                startActivity(i1);
+
+            }
+        });
+
     }
 
     private void initialiseDetectorsAndSources() {
